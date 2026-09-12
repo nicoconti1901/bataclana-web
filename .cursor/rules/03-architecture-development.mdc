@@ -1,0 +1,170 @@
+---
+description: "Arquitectura frontend, desarrollo, componentes, escalabilidad y criterios técnicos."
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.css", "**/*.scss", "**/*.json"]
+alwaysApply: true
+---
+
+# TANGO & ARTE DIGITAL — DEVELOPMENT ARCHITECTURE
+
+## Prioridad técnica
+
+La implementación debe equilibrar:
+
+1. Identidad visual.
+2. UX.
+3. Accesibilidad.
+4. Performance.
+5. SEO.
+6. Escalabilidad.
+7. Mantenibilidad.
+
+La estética nunca justifica código frágil.
+
+## Stack
+
+Preferir, salvo que el proyecto existente indique otra cosa:
+
+- React.
+- Next.js.
+- TypeScript.
+- CSS moderno.
+- Tailwind CSS o sistema de estilos modular.
+- Motion / Framer Motion para animaciones.
+- GSAP solo para interacciones complejas que lo justifiquen.
+
+No introducir tecnologías adicionales sin una razón concreta.
+
+## Componentización
+
+Separar:
+
+- Datos.
+- Presentación.
+- Lógica.
+- Estado.
+- Animación.
+
+Crear componentes reutilizables.
+
+Evitar:
+
+- Componentes gigantes.
+- Duplicación.
+- Hardcodear datos que deberían ser configurables.
+- Mezclar lógica de negocio con detalles puramente visuales.
+
+## Antes de programar una sección
+
+Definir:
+
+1. Objetivo.
+2. Emoción.
+3. Contenido.
+4. Jerarquía.
+5. Interacción.
+6. Animación.
+7. Responsive.
+8. Accesibilidad.
+9. Performance.
+
+Después implementar.
+
+## Estructura
+
+Mantener una organización que permita crecer la plataforma.
+
+Separar conceptualmente:
+
+- components
+- sections
+- pages / routes
+- data
+- hooks
+- utils
+- styles
+- assets
+
+Adaptar esta estructura a la arquitectura real del proyecto en vez de crear carpetas innecesarias.
+
+## Contenido y datos
+
+Los eventos, clases, artistas, profesores y lugares deben poder evolucionar sin obligar a rehacer los componentes.
+
+Preferir:
+
+- Tipos explícitos.
+- Interfaces.
+- Datos estructurados.
+- Componentes parametrizados.
+
+## Responsive
+
+Diseñar desde el inicio para:
+
+- Mobile.
+- Tablet.
+- Desktop.
+
+No usar fixes aislados como solución principal.
+
+## Accesibilidad
+
+Siempre que corresponda:
+
+- HTML semántico.
+- Buttons reales.
+- Links reales.
+- Alt text.
+- Focus visible.
+- Contraste suficiente.
+- Navegación por teclado.
+- Labels.
+- Estados accesibles.
+- Respeto por reduced motion.
+
+## Performance
+
+Priorizar:
+
+- Lazy loading.
+- AVIF/WebP.
+- Responsive images.
+- Code splitting.
+- Carga diferida de video.
+- Animaciones eficientes.
+- Evitar JavaScript innecesario.
+
+No convertir la página en una demostración técnica que perjudique el rendimiento.
+
+## SEO
+
+Considerar:
+
+- Metadata.
+- Open Graph.
+- URLs semánticas.
+- Heading hierarchy.
+- Schema.org cuando aplique.
+- Contenido indexable.
+- Datos relevantes en páginas de eventos.
+
+## Regla de mantenimiento
+
+Antes de agregar código:
+
+> buscar si ya existe un componente, utilidad, hook o patrón reutilizable.
+
+No crear una segunda versión de algo que ya existe.
+
+## Regla para IA
+
+Cuando generes código:
+
+- Respeta la arquitectura existente.
+- Respeta el design system.
+- Reutiliza componentes.
+- No inventes colores.
+- No agregues dependencias sin necesidad.
+- No reemplaces una solución existente sin justificarlo.
+- Mantén el código legible.
+- Evita sobreingeniería.

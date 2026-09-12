@@ -1,0 +1,199 @@
+---
+description: "Sistema visual, composición, tipografía, color, contenido y componentes UI."
+globs: ["**/*.tsx", "**/*.jsx", "**/*.css", "**/*.scss"]
+alwaysApply: false
+---
+
+# TANGO & ARTE DIGITAL — UI / DESIGN SYSTEM
+
+## Regla principal
+
+Cada sección debe responder en este orden:
+
+1. ¿Qué quiero hacer sentir?
+2. ¿Qué quiero comunicar?
+3. ¿Cómo lo convierto en una interfaz?
+
+No comenzar desde componentes genéricos.
+
+## Color
+
+Evitar la fórmula automática "negro + rojo + blanco".
+
+Base recomendada:
+
+- Negro profundo.
+- Blanco cálido.
+- Gris carbón.
+- Crema.
+- Bordó / rojo oscuro como acento.
+- Opcionalmente cobre, vino o dorado apagado.
+
+El rojo debe funcionar principalmente como acento, no necesariamente como color dominante.
+
+La interfaz debe seguir siendo reconocible aunque el rojo no esté presente.
+
+No introducir colores arbitrarios que contradigan el sistema visual.
+
+## Tipografía
+
+Usar una jerarquía marcada.
+
+### Display
+
+Para:
+
+- Títulos principales.
+- Nombres de eventos.
+- Frases.
+- Declaraciones artísticas.
+
+### Sans contemporánea
+
+Para:
+
+- Navegación.
+- Información.
+- Fechas.
+- Horarios.
+- Botones.
+- Datos prácticos.
+
+### Experimental
+
+Puede utilizarse puntualmente para elementos expresivos, pero nunca debe perjudicar legibilidad.
+
+Evitar acumular demasiadas familias tipográficas.
+
+## Composición
+
+Priorizar:
+
+- Asimetría controlada.
+- Ritmo visual.
+- Escala tipográfica.
+- Espacio negativo.
+- Capas.
+- Fotografías fuera de la cuadrícula tradicional.
+- Contraste entre bloques informativos y bloques artísticos.
+
+No convertir cada sección en una grilla de tarjetas idénticas.
+
+## Hero
+
+El Hero debe transmitir:
+
+- Movimiento.
+- Cultura.
+- Encuentro.
+- Misterio.
+
+Evitar mensajes genéricos como "Bienvenido".
+
+Ejemplo conceptual:
+
+TANGO
+
+No necesitás saber bailar para empezar.
+
+[ DESCUBRIR EL TANGO ]
+
+La primera pantalla debe funcionar como una entrada al universo del proyecto.
+
+## Componentes
+
+Construir un sistema reutilizable. Componentes posibles:
+
+- Navbar.
+- Hero.
+- EventCard.
+- EventGrid.
+- EventTimeline.
+- ClassCard.
+- TeacherCard.
+- ArtistCard.
+- VenueCard.
+- TangoStory.
+- QuoteSection.
+- EditorialSection.
+- ImageReveal.
+- Marquee.
+- CategoryFilter.
+- DateFilter.
+- LocationFilter.
+- Search.
+- EventDetail.
+- TeacherProfile.
+- Gallery.
+- Footer.
+
+No crear variantes innecesarias. Reutilizar componentes existentes cuando resuelvan el problema.
+
+## Eventos
+
+No presentar todos los eventos como tarjetas genéricas.
+
+Preferir cuando corresponda:
+
+- Editorial layouts.
+- Fechas de gran escala.
+- Fotografías grandes.
+- Timelines.
+- Listados con jerarquía.
+- Filtros visuales.
+- Eventos destacados.
+
+La información práctica debe seguir siendo fácil de encontrar.
+
+## Contenido
+
+La comunicación debe incluir tanto a especialistas como a principiantes.
+
+Evitar lenguaje que haga sentir al principiante como un outsider.
+
+Preferir mensajes que abran la puerta al tango.
+
+Ejemplo:
+
+"No necesitás experiencia previa."
+
+"Tu primer paso."
+
+"Una noche para bailar, escuchar y descubrir."
+
+## Fotografía
+
+Preferir imágenes:
+
+- Cinematográficas.
+- Editoriales.
+- Urbanas.
+- Espontáneas.
+- Con movimiento.
+- Con profundidad.
+- Con iluminación dramática.
+
+Evitar fotografías excesivamente corporativas, posadas o genéricas.
+
+## Inclusión visual
+
+No representar únicamente bailarines profesionales.
+
+Mostrar también:
+
+- Principiantes.
+- Profesores.
+- DJs.
+- Músicos.
+- Público.
+- Encuentros.
+- Salones.
+- Barrios.
+- Calles.
+- Detalles.
+- Manos.
+- Zapatos.
+- Instrumentos.
+- Movimiento.
+
+El tango debe sentirse humano.
