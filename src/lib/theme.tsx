@@ -27,7 +27,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.removeAttribute("data-tinto");
     window.localStorage.setItem("bataclana-theme", theme);
+    window.localStorage.removeItem("bataclana-tint");
   }, [theme]);
 
   const value = useMemo(

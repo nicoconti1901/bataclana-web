@@ -27,14 +27,14 @@ export function Navbar() {
         clear ? "themed-nav-clear border-transparent" : "themed-nav border-[var(--page-line)]"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2.5 md:px-6 md:py-3">
+        <Link href="/" className="flex shrink-0 items-center" onClick={() => setOpen(false)}>
           <Image
-            src="/logo-bataclana.jpg"
+            src={site.logo}
             alt="Milonga Bataclana"
-            width={148}
-            height={88}
-            className="h-11 w-auto"
+            width={2400}
+            height={1792}
+            className="brand-logo"
             priority
           />
           <span className="sr-only">{site.name}</span>

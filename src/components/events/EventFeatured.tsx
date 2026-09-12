@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { events, kindLabel } from "@/data/events";
-import { ArtFrame } from "@/components/ui/ArtFrame";
 
 export function EventFeatured() {
   const featured = events.filter((event) => event.featured);
@@ -20,7 +19,12 @@ export function EventFeatured() {
 
       <div className="grid gap-8 md:grid-cols-2">
         {featured.map((event) => (
-          <ArtFrame key={event.slug}>
+          <article key={event.slug} className="event-skin art-frame">
+            <span aria-hidden className="art-frame-inset" />
+            <span aria-hidden className="art-corner art-corner-tl" />
+            <span aria-hidden className="art-corner art-corner-tr" />
+            <span aria-hidden className="art-corner art-corner-bl" />
+            <span aria-hidden className="art-corner art-corner-br" />
             <Link href={`/eventos/${event.slug}`} className="group block">
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
@@ -32,12 +36,12 @@ export function EventFeatured() {
                 />
               </div>
               <div className="px-8 pb-8 pt-2">
-                <div className="mb-3 flex items-center justify-between text-[11px] uppercase tracking-[0.16em] text-[var(--page-muted)]">
+                <div className="mb-3 flex items-center justify-between text-[11px] uppercase tracking-[0.16em] opacity-70">
                   <span>{kindLabel[event.kind]}</span>
                   <span>{event.dateLabel}</span>
                 </div>
                 <h3 className="font-display text-4xl">{event.title}</h3>
-                <p className="mt-3 max-w-md text-sm leading-relaxed text-[var(--page-muted)]">
+                <p className="mt-3 max-w-md text-sm leading-relaxed opacity-80">
                   {event.excerpt}
                 </p>
                 <p className="mt-5 text-[12px] uppercase tracking-[0.14em] opacity-70">
@@ -45,7 +49,7 @@ export function EventFeatured() {
                 </p>
               </div>
             </Link>
-          </ArtFrame>
+          </article>
         ))}
       </div>
     </section>

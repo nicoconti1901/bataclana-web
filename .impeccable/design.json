@@ -6,9 +6,9 @@
     "colorMeta": {
       "vino-salon": {
         "role": "primary",
-        "displayName": "Vino de salón",
-        "canonical": "#2a0e14",
-        "tonalRamp": ["#1a080c", "#2a0e14", "#3c141c", "#4a1822", "#6b2a28", "#a87870", "#e0c8b4", "#f6eadc"]
+        "displayName": "Noche del banner",
+        "canonical": "#161210",
+        "tonalRamp": ["#0c0a09", "#100e0c", "#161210", "#201a17", "#26201c", "#6b5248", "#d4c0a8", "#f6eadc"]
       },
       "cream-pista": {
         "role": "secondary",
@@ -19,8 +19,8 @@
       "cream-muted": {
         "role": "neutral",
         "displayName": "Crema muted",
-        "canonical": "#e0c8b4",
-        "tonalRamp": ["#4a3226", "#6b4a38", "#8a6a54", "#a88870", "#c4a890", "#d4b8a0", "#e0c8b4", "#f3e6d2"]
+        "canonical": "#d4c0a8",
+        "tonalRamp": ["#4a3226", "#6b4a38", "#8a6a54", "#a88870", "#c4a890", "#d4c0a8", "#e0c8b4", "#f3e6d2"]
       },
       "accent-cream": {
         "role": "tertiary",
@@ -31,26 +31,26 @@
       "accent-ink-vino": {
         "role": "neutral",
         "displayName": "Tinta sobre CTA (Vino)",
-        "canonical": "#3a1218",
-        "tonalRamp": ["#1e0a10", "#2a0e14", "#3a1218", "#4a1822", "#6b2a28", "#a06060", "#e0c8b4", "#f6eadc"]
+        "canonical": "#161210",
+        "tonalRamp": ["#0c0a09", "#100e0c", "#161210", "#201a17", "#26201c", "#6b5248", "#d4c0a8", "#f6eadc"]
       },
       "surface-vino": {
         "role": "neutral",
         "displayName": "Superficie Vino",
-        "canonical": "#4a1822",
-        "tonalRamp": ["#1e0a10", "#2a0e14", "#3c141c", "#4a1822", "#5a222c", "#8a4850", "#d4b0a8", "#f6eadc"]
+        "canonical": "#26201c",
+        "tonalRamp": ["#0c0a09", "#161210", "#201a17", "#26201c", "#2e2723", "#6b5248", "#d4c0a8", "#f6eadc"]
       },
       "card-vino": {
         "role": "neutral",
         "displayName": "Tarjeta Vino",
-        "canonical": "#3c141c",
-        "tonalRamp": ["#1e0a10", "#2a0e14", "#3c141c", "#4a1822", "#5a222c", "#8a4850", "#d4b0a8", "#f6eadc"]
+        "canonical": "#201a17",
+        "tonalRamp": ["#0c0a09", "#161210", "#1c1715", "#201a17", "#26201c", "#6b5248", "#d4c0a8", "#f6eadc"]
       },
       "footer-vino": {
         "role": "neutral",
         "displayName": "Pie Vino",
-        "canonical": "#1e0a10",
-        "tonalRamp": ["#14080c", "#1e0a10", "#2a0e14", "#3c141c", "#4a1822", "#8a4850", "#e0c8b4", "#f6eadc"]
+        "canonical": "#0c0a09",
+        "tonalRamp": ["#080706", "#0c0a09", "#100e0c", "#161210", "#201a17", "#6b5248", "#d4c0a8", "#f6eadc"]
       },
       "sepia-paper": {
         "role": "primary",

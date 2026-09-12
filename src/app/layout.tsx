@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: `%s · ${site.shortName}`,
   },
   description:
-    "Milonga, clases y cultura tanguera en Buenos Aires. No necesitás saber bailar para empezar.",
+    "Milonga, clases y cultura tanguera en La Plata. No necesitás saber bailar para empezar.",
   openGraph: {
     title: site.name,
     description:

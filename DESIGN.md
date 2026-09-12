@@ -2,14 +2,14 @@
 name: Milonga Bataclana
 description: Paper and Wine — misma casa, dos luces; revista cultural que se lee como una pista.
 colors:
-  vino-salon: "#2a0e14"
+  vino-salon: "#100e0c"
   cream-pista: "#f6eadc"
-  cream-muted: "#e0c8b4"
+  cream-muted: "#d4c0a8"
   accent-cream: "#f0d4b8"
-  accent-ink-vino: "#3a1218"
-  surface-vino: "#4a1822"
-  card-vino: "#3c141c"
-  footer-vino: "#1e0a10"
+  accent-ink-vino: "#100e0c"
+  surface-vino: "#221c1a"
+  card-vino: "#1c1715"
+  footer-vino: "#0a0908"
   sepia-paper: "#ead9c0"
   ink-casa: "#241610"
   ink-muted: "#4a3226"
@@ -113,7 +113,7 @@ Queda fuera el cliché tanguero (rosa, sombrero, silueta de pareja, fórmula roj
 Dos paletas espejo. El acento es tinta invertida: crema sobre vino, vino contenido sobre papel.
 
 ### Primary
-- **Vino de salón**: fondo de página y nav en modo oscuro. Es el aire del salón, no un acento.
+- **Asfalto** (`#100e0c`): fondo de página canónico en modo oscuro. Continúa la calle nocturna del hero; el acento y las superficies cargan la lectura. No hay variantes de tinto.
 - **Papel sepia**: fondo de página en modo claro. Lectura diurna, no “tema beige genérico”.
 
 ### Secondary

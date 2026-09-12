@@ -1,10 +1,13 @@
 export const site = {
   name: "Milonga Bataclana",
   shortName: "Bataclana",
-  city: "Buenos Aires",
-  address: "Palermo · se confirma al reservar",
-  instagram: "https://instagram.com",
+  city: "La Plata",
+  address: "La Plata, Buenos Aires",
+  instagram: "https://instagram.com/milongabataclana",
+  instagramHandle: "@milongabataclana",
   email: "hola@milongabataclana.com",
+  tagline: "Bataclana es tango: una casa para escucharlo, abrazarlo y habitarlo.",
+  logo: "/logo.png",
   nav: [
     { href: "/", label: "Inicio" },
     { href: "/tango", label: "El tango" },
