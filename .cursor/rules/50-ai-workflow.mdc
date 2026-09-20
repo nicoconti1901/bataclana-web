@@ -1,0 +1,11 @@
+---
+description: Workflow rules for using Cursor skills, subagents, MCPs and iterative design prototypes.
+alwaysApply: true
+---
+- Use skills for repeatable multi-step workflows and subagents for context-isolated specialist work.
+- For large visual tasks, delegate browser inspection or independent visual critique rather than stuffing all evidence into the parent context.
+- Before adding a dependency, inspect whether Next.js, React, Motion, Tailwind or shadcn already solves the requirement.
+- Use the shadcn MCP for component discovery rather than blindly generating primitives.
+- Use Playwright for browser verification and screenshot-based checks.
+- When the task requests a new visual direction, produce competing prototypes before consolidating them.
+- Do not declare a design complete based only on source-code inspection.

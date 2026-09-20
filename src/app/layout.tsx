@@ -1,52 +1,37 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
-import { ThemeProvider } from "@/lib/theme";
-import { site } from "@/data/site";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const display = Cormorant_Garamond({
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-display-loaded",
 });
 
-const sans = Manrope({
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
-  variable: "--font-sans-loaded",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.name} · Tango en Buenos Aires`,
-    template: `%s · ${site.shortName}`,
+    default: "Casa Meridiana — Design Lab",
+    template: "%s · Casa Meridiana Lab",
   },
   description:
-    "Milonga, clases y cultura tanguera en La Plata. No necesitás saber bailar para empezar.",
-  openGraph: {
-    title: site.name,
-    description:
-      "Una experiencia digital para descubrir el tango: agenda, clases y la milonga.",
-    locale: "es_AR",
-    type: "website",
+    "Design Lab para explorar direcciones visuales de una experiencia digital de tango en La Plata. Contenido ficticio de demostración.",
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="es" data-theme="vino">
-      <body className={`${display.variable} ${sans.variable} antialiased`}>
-        <ThemeProvider>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </ThemeProvider>
-      </body>
+    <html
+      lang="es"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
 }

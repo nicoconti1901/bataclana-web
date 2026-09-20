@@ -1,0 +1,235 @@
+import type { DanceClass } from "@/features/classes/types";
+import type {
+  EditorialPiece,
+  Instructor,
+  Organization,
+} from "@/features/editorial/types";
+import type { Event } from "@/features/events/types";
+
+/**
+ * Fictional demo content for visual exploration only.
+ * Not affiliated with any real institution, person, or venue in La Plata.
+ */
+export const demoOrganization: Organization = {
+  name: "Casa Meridiana",
+  tagline: "Tango contemporáneo en La Plata",
+  city: "La Plata",
+  neighborhood: "Centro",
+  statement:
+    "El tango de hoy no es réplica: es conversación. En La Plata se escucha distinto, se camina distinto, y la milonga sigue siendo un espacio donde el tiempo se pliega.",
+  email: "hola@casameridiana.demo",
+  instagram: "@casameridiana.demo",
+  addressHint: "Calle 54 entre 5 y 6 — La Plata",
+};
+
+export const demoEvents: Event[] = [
+  {
+    id: "evt-01",
+    slug: "milonga-del-surco",
+    title: "Milonga del Surco",
+    status: "published",
+    startsAt: "2026-10-03T23:00:00-03:00",
+    endsAt: "2026-10-04T04:30:00-03:00",
+    venueName: "Salón Meridiana",
+    venueAddress: "Calle 54 nº 712",
+    city: "La Plata",
+    shortDescription:
+      "Orquesta en vivo, piso amplio y una noche pensada para quedarse.",
+    description:
+      "Una milonga de temporada con DJ rotativo, barra liviana y una apertura de pista a medianoche. Demo content for art direction.",
+    priceLabel: "Entrada $8.000",
+    registrationLabel: "Reservar lugar",
+    registrationUrl: "#",
+    heroImage: {
+      id: "media-milonga",
+      alt: "Pista de milonga con luces bajas — placeholder",
+      tone: "ink",
+      aspect: "wide",
+    },
+    tags: ["milonga", "vivo"],
+    featured: true,
+    createdAt: "2026-09-01T12:00:00Z",
+    updatedAt: "2026-09-15T12:00:00Z",
+  },
+  {
+    id: "evt-02",
+    slug: "practica-abierta-jueves",
+    title: "Práctica abierta",
+    status: "published",
+    startsAt: "2026-09-25T20:30:00-03:00",
+    venueName: "Sala Norte",
+    city: "La Plata",
+    shortDescription: "Ensayo colectivo sin presión de pista.",
+    description: "Práctica guiada con pausas para preguntas.",
+    priceLabel: "Aporte $3.500",
+    tags: ["practica"],
+    featured: false,
+    createdAt: "2026-09-01T12:00:00Z",
+    updatedAt: "2026-09-01T12:00:00Z",
+  },
+  {
+    id: "evt-03",
+    slug: "encuentro-de-orquestas",
+    title: "Encuentro de orquestas",
+    status: "published",
+    startsAt: "2026-10-18T21:00:00-03:00",
+    venueName: "Patio 7",
+    city: "La Plata",
+    shortDescription: "Dos formaciones, un mismo salón.",
+    description: "Programa corto + milonga.",
+    priceLabel: "Entrada $12.000",
+    tags: ["musica", "vivo"],
+    featured: false,
+    createdAt: "2026-09-01T12:00:00Z",
+    updatedAt: "2026-09-01T12:00:00Z",
+  },
+  {
+    id: "evt-04",
+    slug: "cine-y-tango",
+    title: "Cine y tango",
+    status: "published",
+    startsAt: "2026-10-11T19:00:00-03:00",
+    venueName: "Sala Meridiana",
+    city: "La Plata",
+    shortDescription: "Proyección, conversación y un vals lento.",
+    description: "Ciclo editorial audiovisual.",
+    priceLabel: "Entrada $5.000",
+    tags: ["editorial", "cine"],
+    featured: false,
+    createdAt: "2026-09-01T12:00:00Z",
+    updatedAt: "2026-09-01T12:00:00Z",
+  },
+];
+
+export const demoClasses: DanceClass[] = [
+  {
+    id: "cls-01",
+    slug: "inicio-lunes",
+    title: "Abrazo y caminata",
+    level: "inicio",
+    weekday: "Lunes",
+    timeLabel: "19:00",
+    durationMinutes: 90,
+    instructors: ["Vera Solís", "Tomás Righi"],
+    shortDescription: "Eje, contacto y primeros giros.",
+    venueName: "Sala Norte",
+    priceLabel: "Clase $6.000",
+  },
+  {
+    id: "cls-02",
+    slug: "intermedio-miercoles",
+    title: "Cadencias urbanas",
+    level: "intermedio",
+    weekday: "Miércoles",
+    timeLabel: "20:30",
+    durationMinutes: 90,
+    instructors: ["Vera Solís"],
+    shortDescription: "Ritmo, pausa y musicalidad de pista.",
+    venueName: "Sala Norte",
+    priceLabel: "Clase $7.000",
+  },
+  {
+    id: "cls-03",
+    slug: "avanzado-viernes",
+    title: "Laboratorio de giro",
+    level: "avanzado",
+    weekday: "Viernes",
+    timeLabel: "18:30",
+    durationMinutes: 120,
+    instructors: ["Tomás Righi", "Nina Ortega"],
+    shortDescription: "Investigación técnica sin coreografía fija.",
+    venueName: "Salón Meridiana",
+    priceLabel: "Clase $8.500",
+  },
+  {
+    id: "cls-04",
+    slug: "practica-sabado",
+    title: "Práctica de piso",
+    level: "practica",
+    weekday: "Sábado",
+    timeLabel: "17:00",
+    durationMinutes: 120,
+    instructors: ["Equipo Meridiana"],
+    shortDescription: "Espacio libre con guía puntual.",
+    venueName: "Salón Meridiana",
+    priceLabel: "Aporte $4.000",
+  },
+];
+
+export const demoEditorial: EditorialPiece[] = [
+  {
+    id: "ed-01",
+    slug: "la-pista-como-ciudad",
+    title: "La pista como ciudad",
+    excerpt:
+      "Cómo la geometría de La Plata se filtra en la forma de circular una milonga.",
+    body: "Texto demo para explorar tipografía editorial y ritmo de lectura.",
+    byline: "Redacción Meridiana",
+    publishedAt: "2026-08-20",
+    taxonomy: ["ciudad", "milonga"],
+    heroImage: {
+      id: "media-editorial-1",
+      alt: "Calle nocturna — placeholder",
+      tone: "concrete",
+      aspect: "landscape",
+    },
+  },
+  {
+    id: "ed-02",
+    slug: "notas-sobre-el-vals",
+    title: "Notas sobre el vals",
+    excerpt: "Tres escuchas, una misma inclinación del cuerpo.",
+    body: "Ensayo corto de demostración.",
+    byline: "Nina Ortega",
+    publishedAt: "2026-07-12",
+    taxonomy: ["musica"],
+    heroImage: {
+      id: "media-editorial-2",
+      alt: "Detalle de partitura — placeholder",
+      tone: "paper",
+      aspect: "portrait",
+    },
+  },
+];
+
+export const demoInstructors: Instructor[] = [
+  {
+    id: "ins-01",
+    slug: "vera-solis",
+    name: "Vera Solís",
+    role: "Docente · musicalidad",
+    bio: "Perfil ficticio. Trabaja la escucha antes que la figura.",
+    portrait: {
+      id: "media-vera",
+      alt: "Retrato placeholder de Vera Solís",
+      tone: "warm",
+      aspect: "portrait",
+    },
+  },
+  {
+    id: "ins-02",
+    slug: "tomas-righi",
+    name: "Tomás Righi",
+    role: "Docente · técnica",
+    bio: "Perfil ficticio. Enfocado en eje y transferencia de peso.",
+    portrait: {
+      id: "media-tomas",
+      alt: "Retrato placeholder de Tomás Righi",
+      tone: "ember",
+      aspect: "portrait",
+    },
+  },
+  {
+    id: "ins-03",
+    slug: "nina-ortega",
+    name: "Nina Ortega",
+    role: "Docente · investigación",
+    bio: "Perfil ficticio. Cruza tango con herramientas contemporáneas.",
+    portrait: {
+      id: "media-nina",
+      alt: "Retrato placeholder de Nina Ortega",
+      tone: "stage",
+      aspect: "portrait",
+    },
+  },
+];

@@ -1,0 +1,11 @@
+---
+description: Global product, architecture and AI workflow constraints for the Tango Experience project.
+alwaysApply: true
+---
+Follow `AGENTS.md` as the project constitution.
+
+Do not collapse the project into a generic AI-generated website. Preserve a deliberate art direction and domain vocabulary.
+
+When requirements are ambiguous and the decision affects architecture or visual language, inspect the existing project first and state the decision before editing.
+
+Prefer the smallest coherent change that keeps the architecture extensible.

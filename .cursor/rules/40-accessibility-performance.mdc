@@ -1,0 +1,14 @@
+---
+description: Accessibility, performance and responsive quality gates.
+globs: ["**/*.tsx", "**/*.css", "**/*.ts"]
+alwaysApply: false
+---
+- Respect prefers-reduced-motion.
+- Maintain visible keyboard focus states.
+- Use semantic headings in logical order.
+- Do not encode important text only inside images.
+- Optimize images with next/image or an equivalent optimized pipeline.
+- Avoid unnecessary client bundles; measure before adding dependencies.
+- Test at narrow mobile, standard mobile, laptop and wide desktop widths.
+- Check loading states, empty states, long titles, missing images and unusually long event descriptions.
+- Prefer progressive enhancement over client-only rendering.
