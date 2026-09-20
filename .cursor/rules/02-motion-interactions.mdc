@@ -1,0 +1,148 @@
+---
+description: "Principios de animación, scroll, microinteracciones y lenguaje de movimiento."
+globs: ["**/*.tsx", "**/*.jsx", "**/*.css", "**/*.scss"]
+alwaysApply: false
+---
+
+# TANGO & ARTE DIGITAL — MOTION & INTERACTIONS
+
+## Concepto central
+
+El movimiento digital debe inspirarse en la lógica del tango:
+
+> pausa → tensión → movimiento → pausa
+
+No todo debe moverse constantemente.
+
+## Scroll como coreografía
+
+El scroll es parte del lenguaje artístico.
+
+Utilizarlo para:
+
+- Revelar contenido.
+- Crear ritmo.
+- Separar y acercar elementos.
+- Generar profundidad.
+- Cambiar de escena.
+- Introducir imágenes.
+- Crear narrativa.
+
+La experiencia debe sentirse coreografiada, no cargada de efectos.
+
+## Técnicas recomendadas
+
+Según la necesidad del componente:
+
+- CSS transitions.
+- CSS transforms.
+- Framer Motion / Motion.
+- GSAP solo cuando aporte un beneficio claro.
+- Sticky sections.
+- Image reveal.
+- Masks.
+- Horizontal movement controlado.
+- Parallax sutil.
+- Scale / opacity / translate.
+
+Priorizar soluciones simples antes que sistemas complejos.
+
+## Timing
+
+Preferir:
+
+- Aceleraciones suaves.
+- Desaceleraciones suaves.
+- Entradas progresivas.
+- Movimiento lento para fotografías.
+- Cambios más rápidos para acciones puntuales.
+- Pausas visuales.
+
+Evitar:
+
+- Rebotes excesivos.
+- Animaciones infantiles.
+- Efectos aleatorios.
+- Partículas genéricas.
+- Glitch sin justificación.
+- Movimiento continuo sin función.
+
+## Microinteracciones
+
+### Hover
+
+Una imagen puede:
+
+- ampliar ligeramente;
+- desplazarse;
+- modificar contraste;
+- revelar contenido.
+
+### Cursor
+
+En desktop puede utilizarse un cursor contextual.
+
+Ejemplos:
+
+- VER EVENTO →
+- EXPLORAR
+- DAR EL PRIMER PASO
+
+El cursor personalizado nunca debe impedir usabilidad o accesibilidad.
+
+## Video
+
+El video puede utilizarse en:
+
+- Hero.
+- Eventos.
+- Historias de artistas.
+- Contenido cultural.
+- Fondos abstractos.
+
+Debe estar optimizado para rendimiento.
+
+## Audio
+
+Nunca reproducir audio automáticamente sin una interacción clara del usuario.
+
+El audio puede ser una capa opcional:
+
+- bandoneón;
+- ambiente de salón;
+- pasos;
+- vinilo;
+- aplausos;
+- fragmentos musicales.
+
+## Regla de intención
+
+Toda animación debe responder:
+
+> ¿Qué aporta esta animación a la narrativa, comprensión o emoción?
+
+Si no aporta nada, eliminarla.
+
+## Accesibilidad de movimiento
+
+Respetar siempre:
+
+```css
+@media (prefers-reduced-motion: reduce) {
+  /* Reducir o eliminar movimientos no esenciales */
+}
+```
+
+Las animaciones no esenciales deben poder reducirse o desactivarse.
+
+## Mobile
+
+En dispositivos móviles:
+
+- Reducir efectos costosos.
+- Evitar parallax pesado.
+- Priorizar legibilidad.
+- Mantener el impacto visual mediante composición y tipografía.
+- Evitar desplazamientos horizontales accidentales.
+
+La experiencia mobile debe diseñarse específicamente, no ser simplemente un desktop comprimido.

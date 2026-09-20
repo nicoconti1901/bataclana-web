@@ -1,37 +1,52 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Footer } from "@/components/layout/Footer";
+import { Navbar } from "@/components/layout/Navbar";
+import { ThemeProvider } from "@/lib/theme";
+import { site } from "@/data/site";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const display = Cormorant_Garamond({
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-display-loaded",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sans = Manrope({
   subsets: ["latin"],
+  variable: "--font-sans-loaded",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Casa Meridiana — Design Lab",
-    template: "%s · Casa Meridiana Lab",
+    default: `${site.name} · Tango en Buenos Aires`,
+    template: `%s · ${site.shortName}`,
   },
   description:
-    "Design Lab para explorar direcciones visuales de una experiencia digital de tango en La Plata. Contenido ficticio de demostración.",
-  robots: {
-    index: false,
-    follow: false,
+    "Milonga, clases y cultura tanguera en La Plata. No necesitás saber bailar para empezar.",
+  openGraph: {
+    title: site.name,
+    description:
+      "Una experiencia digital para descubrir el tango: agenda, clases y la milonga.",
+    locale: "es_AR",
+    type: "website",
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html
-      lang="es"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="flex min-h-full flex-col">{children}</body>
+    <html lang="es" data-theme="vino">
+      <body className={`${display.variable} ${sans.variable} antialiased`}>
+        <ThemeProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
