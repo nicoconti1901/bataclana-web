@@ -1,0 +1,17 @@
+---
+description: Design-system rules for the Tango visual language, typography, composition, motion and responsive behavior.
+globs: ["**/*.tsx", "**/*.css", "**/*.scss", "**/*.mdx"]
+alwaysApply: false
+---
+# Tango visual system
+
+- Treat typography, photography, whitespace, scale, rhythm and motion as first-class design material.
+- Avoid generic UI motifs: default dashboards, excessive cards, uniform 3-column grids, pill-everything, giant gradient blobs and stock-AI aesthetics.
+- Prefer editorial compositions, asymmetry, layered depth, strong type hierarchy, tactile borders and intentional cropping.
+- Use a restrained palette with a dark ink base, warm paper/ivory support and a controlled tango accent; do not spread accent color everywhere.
+- Use one expressive display face plus one highly legible sans/serif text family. Avoid more than 3 font families.
+- Motion must reinforce rhythm, arrival, emphasis, navigation or choreography. Never animate for decoration alone.
+- Provide reduced-motion behavior for all non-essential animations.
+- Design mobile as a deliberate composition, not a squeezed desktop.
+- Every section should have a clear reason to exist.
+- Visual variants must differ in composition, typography, imagery treatment or navigation model, not only color.

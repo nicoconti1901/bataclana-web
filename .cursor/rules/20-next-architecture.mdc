@@ -1,0 +1,23 @@
+---
+description: Next.js architecture and React engineering conventions.
+globs: ["**/*.ts", "**/*.tsx"]
+alwaysApply: true
+---
+# Stack assumptions
+
+- Next.js 16.x App Router.
+- React 19.3.
+- TypeScript with strict mode.
+- Tailwind CSS 4.x for utilities and tokens.
+- shadcn/ui only as composable primitives, not as the visual identity.
+- Motion for React for most UI motion; use GSAP only for interactions that genuinely need timeline-level control.
+
+# Architecture
+
+- Prefer Server Components by default.
+- Add `use client` only at interactive boundaries.
+- Keep domain components in feature/domain folders rather than putting everything under generic UI.
+- Keep data access behind repository/service interfaces so demo data and Supabase can be swapped without rewriting the UI.
+- Avoid client-side fetching when server rendering or server actions are sufficient.
+- Use accessible semantic HTML before styling.
+- Keep route handlers and server actions thin; business logic belongs in services.
